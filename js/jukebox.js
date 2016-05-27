@@ -39,13 +39,6 @@ function parseSong(songString) {
 function onComplete() {
    console.log('Song finished playing');
 
-	 while (onComplete){
-		 var input = prompt("Please enter a song string: ");
-	// 	//  onComplete = false;
-		 playSong(parseSong(input), 120, onComplete);
-		 onComplete = true
-	 }
-
 	if (onComplete) {
 		var input = prompt("Please enter a song string: ");
 		playSong(parseSong(input), 120, onComplete);
