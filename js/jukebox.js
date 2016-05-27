@@ -4,9 +4,17 @@ function parseNote(note) {
 	var noteObj = {};
 
 	for(i = 0; i < noteArr.length; i++) {
-		
+		if (!(noteArr[1])) {
+			noteObj.pitch = noteArr[0];
+			noteObj.beats = 1; 
+		} else {
+			noteObj.pitch = noteArr[0];
+			noteObj.beats = noteArr[1]; 
+		}
 	}
+
+	return noteObj;
 
 }
 
-parseNote("C#*2");
+console.log(parseNote("C#*2"));
