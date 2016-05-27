@@ -17,4 +17,4 @@ function parseNote(note) {
 
 }
 
-console.log(parseNote("C#*2"));
+// console.log(parseNote("C#*2"));
