@@ -42,6 +42,7 @@ function onComplete() {
 		 var input = prompt("Please enter a song string: ");
 		//  onComplete = false;
 		 playSong(parseSong(input), 120, onComplete);
+		 onComplete = true
 	 }
 
 }
