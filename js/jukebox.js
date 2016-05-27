@@ -18,7 +18,7 @@ function parseNote(note) {
 	return noteObj;
 
 }
-parseNote("C#*2");
+// parseNote("C#*2");
 
 function parseSong(songString) {
 	var songArray = songString.split(" ");
@@ -28,10 +28,15 @@ function parseSong(songString) {
 
 	var i = 0
 	while (i < songLength){
-		song.push(parseNote(songArray(i)));
+		song.push(parseNote(songArray[i]));
+		i++;
 	}
 
 	return song;
 }
 
-// console.log(parseNote("C#*2"));
+// console.log(parseSong("C C C C"));
+
+var input = prompt("Please enter a song string: ");
+console.log(parseSong(input));
+playSong(parseSong(input), 120);
