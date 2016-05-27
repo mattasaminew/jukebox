@@ -35,8 +35,17 @@ function parseSong(songString) {
 	return song;
 }
 
-// console.log(parseSong("C C C C"));
+
+function onComplete() {
+   console.log('Song finished playing');
+	 while (onComplete){
+		 var input = prompt("Please enter a song string: ");
+		//  onComplete = false;
+		 playSong(parseSong(input), 120, onComplete);
+	 }
+
+}
 
 var input = prompt("Please enter a song string: ");
 console.log(parseSong(input));
-playSong(parseSong(input), 120);
+playSong(parseSong(input), 120, onComplete);
