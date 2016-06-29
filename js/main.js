@@ -62,7 +62,7 @@ $(function() {
 	}
 
 	$(document).ready(function() {
-		onComplete();
+		playButton();
 	});
 
 	$(window).load(function() {
